@@ -164,6 +164,17 @@
             transform: translateX(100%) skewX(-20deg);
         }
     }
+.carousel-image {
+    width: 100%;
+    height: 500px; /* Adjust this height as needed */
+    object-fit: cover;
+}
+
+.carousel-inner {
+    max-height: 500px; /* Ensures the entire carousel stays within this height */
+    overflow: hidden;
+}
+
 
 
 </style>
@@ -217,28 +228,29 @@
     <section  id="about us">
 
 <h1 style="font-size: 70; text-align: center; color: grey;">About Us</h1>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-           
-            <div class="carousel-item active">
-                <img src="https://cdn.dribbble.com/users/416610/screenshots/4801105/coding_desk_flat_vector_ui_ux_design_illustration_motion_animation_gif2.gif" class="d-block w-100" alt="..." style="width: 1200px; height: 550px;">
-              </div>
-              <div class="carousel-item">
-                <img src="https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif" class="d-block w-100" alt="..." style="width: 1200px; height: 550px;">
-              </div>
-          <div class="carousel-item">
-            <img src="https://cdn.dribbble.com/users/48223/screenshots/1887714/responsive-website-animations-copy.gif" class="d-block w-100" alt="..." style="width: 1200px; height: 550px;">
-          </div>
-           </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+   <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://cdn.dribbble.com/users/416610/screenshots/4801105/coding_desk_flat_vector_ui_ux_design_illustration_motion_animation_gif2.gif" class="d-block carousel-image" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif" class="d-block carousel-image" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn.dribbble.com/users/48223/screenshots/1887714/responsive-website-animations-copy.gif" class="d-block carousel-image" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+    
     </section>
     <section class="py-5 text-center container" id="services">
 
