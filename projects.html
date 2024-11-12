@@ -218,5 +218,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+            const targetId = this.getAttribute("href").substring(1);
+            if (!document.getElementById(targetId)) {
+                e.preventDefault();
+                window.location.href = `/index.html#${targetId}`;
+            }
+        });
+    });
+</script>
+
     </body>
     </html>
